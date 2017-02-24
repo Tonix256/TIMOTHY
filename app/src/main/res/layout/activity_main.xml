@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.timothy.timothy.MainActivity"
+    android:background="#f8d575">
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:text="ENTER NAME"
+        android:id="@+id/e"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#0b0a0a" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ename"
+        android:layout_alignTop="@+id/e"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/e"
+        android:layout_toEndOf="@+id/e"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="120sp"
+        android:layout_height="45sp"
+        android:text="CONTACT"
+        android:id="@+id/c"
+        android:layout_marginTop="48dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/e"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#040404" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cont"
+        android:background="#ffffff"
+        android:layout_alignTop="@+id/c"
+        android:layout_toRightOf="@+id/c"
+        android:layout_alignRight="@+id/ename"
+        android:layout_alignEnd="@+id/ename" />
+
+    <TextView
+        android:layout_width="120sp"
+        android:layout_height="45sp"
+        android:text="GENDER"
+        android:id="@+id/textView3"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#080808" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MALE"
+        android:id="@+id/radioButton"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#0c0c0c"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FEMALE"
+        android:id="@+id/radioButton2"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#100f0f"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:id="@+id/b1"
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/b2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#2734ed" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:id="@+id/b2"
+        android:textSize="18sp"
+        android:layout_below="@+id/radioButton2"
+        android:layout_alignLeft="@+id/radioButton2"
+        android:layout_alignStart="@+id/radioButton2"
+        android:layout_marginTop="46dp"
+        android:background="#1d31e8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sf"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/cont"
+        android:layout_alignStart="@+id/cont"
+        android:textColor="#080808" />
+</RelativeLayout>
